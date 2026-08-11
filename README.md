@@ -40,14 +40,16 @@ When things go wrong, our integrated **Session-Aware AI Support Agent** reads yo
 ### 1. The Orchestrator View (App Catalog)
 *A stunning 3-column layout where users can filter categories, select apps, and view their installation queue.*
 
-> **[TODO: Add Screenshot Here]**
-> *(Upload a screenshot of the Orchestrator page to this repo and replace this block with the image link)*
+
+> <img width="1870" height="898" alt="image" src="https://github.com/user-attachments/assets/1c2a7e41-8153-4269-974f-ba0023b37322" />
+
 
 ### 2. The AI Agents Dashboard
 *A full-page dedicated workflow for diagnosing terminal errors with session-aware context.*
 
-> **[TODO: Add Screenshot Here]**
-> *(Upload a screenshot of the AI Agents page to this repo and replace this block with the image link)*
+
+> <img width="1847" height="886" alt="image" src="https://github.com/user-attachments/assets/9aeac6f6-771c-47d7-9670-17b6905184cd" />
+
 
 <br />
 
