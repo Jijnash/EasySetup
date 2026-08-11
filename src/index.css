@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  
+  --color-background: #030712; /* deep gray/navy */
+  --color-surface: #0f172a; /* slate 900 */
+  --color-surface-hover: #1e293b; /* slate 800 */
+  --color-border: #1e293b;
+  --color-border-hover: #334155;
+  
+  --color-primary: #ffffff;
+  --color-primary-foreground: #030712;
+  --color-secondary: #94a3b8; /* slate 400 */
+  
+  /* Automation / Tech Accents */
+  --color-accent-cyan: #06b6d4; /* cyan 500 */
+  --color-accent-purple: #8b5cf6; /* violet 500 */
+  --color-accent-emerald: #10b981; /* emerald 500 */
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  }
+  
+  .glass-panel {
+    @apply bg-slate-900/40 backdrop-blur-xl border border-white/10;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500;
+  }
+}
+
+body {
+  @apply bg-background text-primary font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200;
+}
